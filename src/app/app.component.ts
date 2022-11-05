@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Rooms } from './rooms/rooms';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,14 @@ export class AppComponent {
     }else{
       this.innerTextValue = "value changes";
     }
-  }
+}
+
+rooms : Rooms = {
+  availableRooms : 10,
+  bookedRooms : 5,
+  totalRomms :17
+}
+
 }
 
 
