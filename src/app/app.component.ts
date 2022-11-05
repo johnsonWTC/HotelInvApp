@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HotelInvApp';
+  innerTextValue = "hey from inner";
+  hideInnerText = false;
+
+  HideText (){
+    this.hideInnerText = !this.hideInnerText;
+  }
 }
+
+
