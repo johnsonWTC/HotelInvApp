@@ -13,6 +13,14 @@ export class AppComponent {
   HideText (){
     this.hideInnerText = !this.hideInnerText;
   }
+
+  changeValue(){
+    if(this.innerTextValue =="value changes"){
+      this.innerTextValue = "hey from inner";
+    }else{
+      this.innerTextValue = "value changes";
+    }
+  }
 }
 
 
