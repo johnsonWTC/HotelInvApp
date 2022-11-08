@@ -24,7 +24,7 @@ export class AppComponent {
 }
 
 rooms : Rooms = {
-  availableRooms : 10,
+  availableRooms : 60,
   bookedRooms : 5,
   totalRomms :17
 }
