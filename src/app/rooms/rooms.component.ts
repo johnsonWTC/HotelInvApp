@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Rooms } from './rooms';
 
 @Component({
   selector: 'app-rooms',
@@ -12,4 +13,12 @@ export class RoomsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  rooms : Rooms ={
+    totalRomms:20,
+    availableRooms: 10,
+    bookedRooms:10,
+  }
+
+  
 }
