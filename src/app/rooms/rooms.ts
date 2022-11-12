@@ -10,6 +10,7 @@ export interface RoomList {
     roomType : string,
     amenities : string,
     price : number,
+    roomNumber : number,
     photo : string,
     checkInTime : Date,
     checkOutTime : Date
