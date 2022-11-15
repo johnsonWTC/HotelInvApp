@@ -1,25 +1,5 @@
 <!-- <p>rooms works! for now </p> -->
 
 <div  *ngIf="rooms.availableRooms > 10">Available Rooms</div>
+<app-table [rooms]="RoomList"></app-table>
 Room List 
-<table>
-    <tr>
-        <th>roomType</th>
-        <th>roomNumber</th>
-        <th>amenities</th>
-        <th>price</th>
-        <th>photo</th>
-        <th>checkInTime</th>
-        <th>checkOutTime</th>
-    </tr>
-    <tr *ngFor="let room of RoomList">
-        <td>{{room.roomType}}</td>
-        <td>{{room.roomNumber}}</td>
-        <td>{{room.amenities}}</td>
-        <td>{{room.price}}</td>
-        <td>{{room.photo}}</td>
-        <td>{{room.checkInTime}}</td>
-        <td>{{room.checkOutTime}}</td>
-
-    </tr>
-</table>

@@ -1,0 +1,24 @@
+<p>table works!</p>
+<table class="table">
+    <tr>
+        <th>roomType</th>
+        <th>roomNumber</th>
+        <th>amenities</th>
+        <th>price</th>
+        <th>photo</th>
+        <th>checkInTime</th>
+        <th>checkOutTime</th>
+        <th>rating</th>
+    </tr>
+    <tr  [ngClass]="e ? 'even' : 'odd'" *ngFor="let room of rooms; let e = even">
+        <td>{{room.roomType}}</td>
+        <td>{{room.roomNumber}}</td>
+        <td>{{room.amenities}}</td>
+        <td>{{room.price}}</td>
+        <td>{{room.photo}}</td>
+        <td>{{room.checkInTime | date}}</td>
+        <td>{{room.checkOutTime | date}}</td>
+        <td>{{room.rating}}</td>
+
+    </tr>
+</table>
